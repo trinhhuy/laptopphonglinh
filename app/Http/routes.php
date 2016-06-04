@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front-end.pages.home');
+});
+Route::get('/category', function () {
+    return view('front-end.pages.category');
+});
+Route::get('/product', function () {
+    return view('front-end.pages.product_detail');
+});
+Route::get('/login', function () {
+    return view('auth.login');
 });
